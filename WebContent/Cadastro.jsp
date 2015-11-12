@@ -8,7 +8,7 @@
 </head>
 <body>
 		<h1> Cadastro<br></h1>
-		<form action="CadastroUsuario.do" method="post">
+		<form action="Cadastro.do" method="post">
 			Título:<input type="text" name="titulo">
 			<br>
 			<br>

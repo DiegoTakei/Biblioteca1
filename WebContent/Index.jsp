@@ -7,7 +7,7 @@
 <title>Biblioteca</title>
 	</head>
 	<body>
-		<form action="CadastroUsuario.do" method="post">
+		<form action="Cadastro.do" method="post">
 			Name:<input type="text" name="name">
 			<br>
 			<br>
