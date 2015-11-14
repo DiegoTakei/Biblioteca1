@@ -4,17 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Biblioteca</title>
-	</head>
-	<body>
-		<form action="Consulta.do" method="post">
-			Name:<input type="text" name="name">
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="Remove.do" method="post">
+			ID:<input type="text" name="id">
 			<br>
 			<br>
-			Senha:<input type="password" name="senha">
-			<br>
-			<br>
-	  		<a href='Admin.jsp' > <input type="submit" value="Entrar"></a>
+	  		<input type="submit" value="Remover">
 		</form>
+			<a href='Cadastro.jsp' > <input type="submit" value="Cadastrar novo item"></a>
 	</body>
 </html>
