@@ -3,6 +3,7 @@ package br.edu.ifpb;
 import javax.persistence.*;
 
 @Entity
+@NamedQuery(name = "Volume.getAll", query = "from Volume")
 public class Volume {
 	
 	@Id
