@@ -13,6 +13,9 @@
 			<br>
 	  		<input type="submit" value="Remover">
 		</form>
-			<a href='Cadastro.jsp' > <input type="submit" value="Cadastrar novo item"></a>
+		<br> <br>
+		<a href='Cadastro.jsp' > <input type="submit" value="Cadastrar novo item"></a>
+		<br> <br>
+		<a href='Consulta.jsp' ><input type="submit" value="Consultar volumes inseridos"></a>
 	</body>
 </html>

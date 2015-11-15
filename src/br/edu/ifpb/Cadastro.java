@@ -1,8 +1,6 @@
 package br.edu.ifpb;
 
 import java.io.IOException;
-
-import javax.persistence.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,19 +18,23 @@ public class Cadastro extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Volume volume = new Volume();
-		volume.setAno_publicacao(request.getParameter(null));
-		volume.setDescricao(request.getParameter(null));
-		volume.setEditora(request.getParameter(null));
-		volume.setTipo_volume(request.getParameter(null));
-		volume.setTitulo(request.getParameter(null));
 		
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("persistence");
-		EntityManager manager = factory.createEntityManager();
-
-		manager.getTransaction().begin();    
-		manager.persist(volume);
-		manager.getTransaction().commit();  
+		Volume volume = new Volume();
+		VolumeDAO dao = new VolumeDAO();
+		
+		volume.setAno_publicacao(request.getParameter("publicacao"));
+		volume.setDescricao(request.getParameter("descricao"));
+		volume.setEditora(request.getParameter("editora"));
+		volume.setTipo_volume(request.getParameter("tipo"));
+		volume.setTitulo(request.getParameter("titulo"));
+		volume.setPags(Integer.parseInt(request.getParameter("paginas")));
+		volume.setAutor(request.getParameter("autor"));
+		
+		dao.insert(volume);
+		
+		response.sendRedirect("http://localhost:8080/Biblioteca1/Admin.jsp");
+		
+		
 	}
 
 }

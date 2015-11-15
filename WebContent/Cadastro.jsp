@@ -24,7 +24,7 @@
 			Data de Publicação:<input type="text" name="publicacao">
 			<br>
 			<br>
-			Volume:<select>
+			Volume:<select name="tipo">
 				<option value="1">Livros</option>
 	  			<option value="2">Periódicos</option>
 	  			<option value="3">Áudios</option>
@@ -32,7 +32,7 @@
 	  		</select>
 	  		<br>
 	  		<br>
-	  		Descrição:<input type="textarea" name="descricao">
+	  		Descrição:<textarea rows="10" cols="40" name="descricao"></textarea>
 			<br>
 			<br>
 	  		<a href='Index.jsp' ><input type="submit" value="Cadastrar"></a>

@@ -7,14 +7,20 @@
 <title>Biblioteca</title>
 	</head>
 	<body>
-		<form action="Consulta.do" method="post">
-			Name:<input type="text" name="name">
+		<form action="Login.do" method="post">
+			<h2>Nome:</h2><input type="text" name="name">
 			<br>
 			<br>
-			Senha:<input type="password" name="senha">
+			<h2>Senha:</h2><input type="password" name="senha">
 			<br>
 			<br>
-	  		<a href='Admin.jsp' > <input type="submit" value="Entrar"></a>
+	  		<input type="submit" name="ok" value="Logar" > <br>
+		</form>
+		<br> <br>
+		<form action="Consulta.jsp">
+			<h2>Usuário</h2>
+			<input type="submit" value="Consultar volumes cadastrados">
+			
 		</form>
 	</body>
 </html>

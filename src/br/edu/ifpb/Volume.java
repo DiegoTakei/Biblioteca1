@@ -12,6 +12,7 @@ public class Volume {
 	private Integer pags;
 	private String ano_publicacao;
 	private String editora;
+	private String autor;
 	
 	
 	public String getTitulo() {
@@ -49,5 +50,11 @@ public class Volume {
 	}
 	public void setEditora(String editora) {
 		this.editora = editora;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
 	}
 }
